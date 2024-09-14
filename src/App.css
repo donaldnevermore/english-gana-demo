@@ -1,38 +1,52 @@
+@font-face {
+    font-family: "ComicShannsMono";
+    src: url("./ComicShannsMono-Regular.ttf")  format("truetype");
+}
+
 .App {
-  text-align: center;
+    margin: 40px 80px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.english-gana {
+    font-size: 60px;
+    font-family: "ComicShannsMono", cursive;
+    text-decoration-skip-ink: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.english-gana summary {
+    font-size: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ruby-wrap ruby>rt {
+    font-size: 65%;
+    margin-bottom: -20px;
 }
 
-.App-link {
-  color: #61dafb;
+.alphabet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.alphabet > article {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+.ipa-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ipa-wrap > article {
+    width: 316px;
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+.ipa {
+    font-family: "Segoe UI", sans-serif;
+    margin-left: 70px;
 }
