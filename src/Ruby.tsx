@@ -46,6 +46,7 @@ things [e]{i}[x]{ks}pl[a]{ā}[i]{}n[e]{}d. M[y]{ī} Dr[a]{ö}[w]{}ing N[u]{û
                     字母上面有一撇表示轻轻的 /ə/ 的发音，比如 water 里的 e 和 person 里的 o，而且 á é í ó ú 发音相同
                 </div>
                 <div>字母上面有三角用来表示 â û，分别对应 cat up</div>
+                <div>下划线表示这些字母不发音</div>
             </summary>
             <Ipa />
             <EnglishGana s={a} hide={hide} />
