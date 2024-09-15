@@ -110,7 +110,7 @@ export function Ipa() {
     const ipaList = [
         ["a", "(a)", "", "", ""],
         ["ɪ", "i", "hit", "bit", "kid"],
-        ["ʊ", "u", "put", "bush", "input"],
+        ["ʊ", "u", "put", "bush", "[s]{sh}ug[a]{ó}r"],
         ["e", "e", "egg", "pet", "jet"],
         ["ɒ", "o", "not", "top", "hot"],
 
