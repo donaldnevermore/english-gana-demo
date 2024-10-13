@@ -9,7 +9,7 @@ drawing.`;
 
     const b = `In [t|d]h[e|é] b[o|u][o]k it s[a|e][i]d: "B[o|ō][a|á] c[o|ó]nstrict[o|ó]r[s|z] sw[a|ä]ll[o|ō][w] [t|d]he[i]r prey
 [w]h[o|ō]l[e], wi[t|d]hout ch[e|ü][w]ing it. [A|â]ft[e|é]r [t|d]h[a|â]t [t|d]hey [a|á]r[e] not [a|ā]bl[e] t[o|ó]
-m[o|ü]v[e], [a|á]nd [t|d]hey sleep thr[o][u|ü][gh] [t|d]h[e|é] si[x|ks] m[o|û]ths [t|d]h[a|á]t [t|d]hey need
+m[o|ü]v[e], [a|á]nd [t|d]hey sleep thr[o][u|ü][gh] [t|d]h[e|é] si[x|ks] m[o|û]nths [t|d]h[a|á]t [t|d]hey need
 f[o|ó]r d[i|ī][g|j]es[ti|ch][o|ó]n."`;
 
     const c = `I pond[e|é]r[e]d deeply, [t|d]hen, [o|ō]v[e|é]r [t|d]h[e|é] [a|á]dven[t|ch][u|ú]r[e][s|z] [o|ó][f|v] [t|d]h[e|é]
@@ -43,11 +43,10 @@ things [e|i][x|ks]pl[a|ā][i]n[e]d. M[y|ī] Drawing N[u|û]mb[e|é]r T[w][o|u
                 <div>字母上面有一横表示字母表里的读音，比如 ā ē ī ō ū 分别对应 A E I O U</div>
                 <div>字母上面有两点表示长音，比如 ä ï ö ü ë 分别对应 car ski dog flu nerd（ë 比较特别）</div>
                 <div>
-                    字母上面有一撇表示轻轻的 /ə/ 的发音，比如 water 里的 e 和 person 里的 o，而且 á é í ó ú 发音相同
+                    字母上面有一撇表示轻轻的 /ə/ 的发音，比如 water 里的 e 和 person 里的 o，而且 á é í ó ú 发音完全相同
                 </div>
                 <div>字母上面有三角用来表示 â û，分别对应 cat up</div>
-                <div>下划线表示这些字母不发音</div>
-                <div>其余的是常见的字母组合发音</div>
+                <div>下划线表示这些字母不发音，其余的是常见的字母组合发音</div>
             </summary>
             <Ipa />
             <EnglishGana s={a} hide={hide} />
@@ -65,32 +64,32 @@ things [e|i][x|ks]pl[a|ā][i]n[e]d. M[y|ī] Drawing N[u|û]mb[e|é]r T[w][o|u
 
 export function Alphabet() {
     const list = [
-        ["a", "[a|â]ppl[e]"],
-        ["b", "boy"],
+        ["a", "[a|â]ppl[e]"], // o
+        ["b", "blue"],
         ["c", "coat"],
-        ["d", "d[o|ö]g"],
-        ["e", "essay"],
-        ["f", "fish"],
-        ["g", "g[a|â][t|d]h[e|é]r"],
-        ["h", "how"],
-        ["i", "input"],
-        ["j", "jaw"],
-        ["k", "k[i|ī]t[e]"],
-        ["l", "l[u|û]nch"],
-        ["m", "m[u|ū][s|z]ic"],
-        ["n", "need"],
-        ["o", "o[x|ks]"],
-        ["p", "p[e|ë]rs[o|ó]n"],
+        ["d", "down"],
+        ["e", "el[e|i]ph[a|á]nt"],
+        ["f", "fruit"],
+        ["g", "g[a|ä]rb[a|i][g|j][e]"],
+        ["h", "heyday"], // o
+        ["i", "input"], // o
+        ["j", "joy"],
+        ["k", "k[e|ë]rn[e|é]l"],
+        ["l", "law"],
+        ["m", "m[o|ō]tiv[a|ā]t[e]"], // o
+        ["n", "n[e|ē][i][t|d]h[e|é]r"], // o
+        ["o", "o[x|ks][i|ī]d[e]"],
+        ["p", "p[o|ö]rch"],
         ["q", "quick"],
-        ["r", "r[u|ü]by"],
-        ["s", "sk[i|ï]"],
-        ["t", "tooth"],
-        ["u", "[u|û]pd[a|ā]t[e]"],
-        ["v", "v[i]ew"],
-        ["w", "weak"],
+        ["r", "r[a|â]nking"],
+        ["s", "s[u|û]mm[e|é]r"],
+        ["t", "toe"], // o
+        ["u", "[u|û]nleash"], // o
+        ["v", "v[a|â]c[u|ū][u]m"],
+        ["w", "w[a|ö]t[e|é]rsk[i|ï]"],
         ["x", "xenon"],
-        ["y", "y[a|ä]rd"],
-        ["z", "z[e|i]r[o|ō]"],
+        ["y", "y[o][u|ü]th"],
+        ["z", "zookeep[e|é]r"], // o
     ];
 
     return (
@@ -136,12 +135,12 @@ export function Ipa() {
 
         ["tʃ", "ch", "l[u|û]nch", "check", "chip"],
         ["dʒ", "j", "jet", "jog", "j[o|ō]ke"],
-        ["θ", "th", "tooth", "th[e|ï]m[e]", "w[a|ö]rmth"],
+        ["θ", "th", "tooth", "th[e|ē]m[e]", "w[a|ö]rmth"],
         ["ð", "dh", "[t|d]hey", "[t|d]his", "we[a][t|d]h[e|é]r"],
         ["ʃ", "sh", "fish", "ship", "wish"],
         ["ʒ", "zh", "vi[si|zh][o|ó]n", "me[a][s|zh][u|ú]r[e]", "ple[a][s|zh][u|ú]r[e]"],
         ["j", "y", "yes", "yell", "y[a|ä]rd"],
-        ["ŋ", "ng", "thing", "think", "fi[n|ng]ger"],
+        ["ŋ", "ng", "think", "sing[e|é]r", "fi[n|ng]g[e|é]r"],
     ];
 
     return (
